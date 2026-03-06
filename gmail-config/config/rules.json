@@ -1,0 +1,37 @@
+{
+  "labels": [
+    "Dev",
+    "Work",
+    "Finance",
+    "Accounts",
+    "Newsletters",
+    "Church"
+  ],
+  "filters": [
+    {
+      "query": "from:supabase.com",
+      "label": "Dev",
+      "archive": true
+    },
+    {
+      "query": "from:linkedin.com OR from:rabota.by",
+      "label": "Work",
+      "archive": false
+    },
+    {
+      "query": "subject:(code OR verification OR confirmation)",
+      "label": "Accounts",
+      "archive": true
+    },
+    {
+      "query": "subject:(invoice OR оплат OR счет OR платеж)",
+      "label": "Finance",
+      "archive": false
+    },
+    {
+      "query": "unsubscribe",
+      "label": "Newsletters",
+      "archive": true
+    }
+  ]
+}

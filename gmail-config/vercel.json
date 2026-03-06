@@ -1,0 +1,19 @@
+{
+  "functions": {
+    "api/apply.ts": {
+      "runtime": "@vercel/node"
+    },
+    "api/health.ts": {
+      "runtime": "@vercel/node"
+    },
+    "api/list.ts": {
+      "runtime": "@vercel/node"
+    }
+  },
+  "crons": [
+    {
+      "path": "/api/apply",
+      "schedule": "0 */6 * * *"
+    }
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "name": "gmail-config",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Configuration-as-code CLI for Gmail labels and filters",
+  "license": "MIT",
+  "type": "commonjs",
+  "packageManager": "yarn@1.22.22",
+  "keywords": [
+    "gmail",
+    "cli",
+    "typescript",
+    "google-api",
+    "vercel",
+    "automation"
+  ],
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "check": "tsc -p tsconfig.json --noEmit",
+    "apply": "yarn --silent build && node dist/index.js apply",
+    "list": "yarn --silent build && node dist/index.js list"
+  },
+  "dependencies": {
+    "@vercel/node": "^5.3.24",
+    "dotenv": "^16.6.1",
+    "googleapis": "^144.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^24.0.0",
+    "typescript": "^5.8.2"
+  }
+}
